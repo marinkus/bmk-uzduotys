@@ -13,7 +13,7 @@ function App() {
   const forecastType = "long-term";
   
 
-  function Condition(param) {
+  function condition(param) {
     const conditions = [
       'clear',
       'isolated-clouds',
@@ -69,7 +69,7 @@ function App() {
       <header className="App-header">
         <h1 className="header">API</h1>
         <ul>
-          {weatherData?.forecastTimestamps.map(data => <li>{data.forecastTimeUtc} - <FontAwesomeIcon icon={'"'+ Condition(data.conditionCode) + '"'} />{data.conditionCode}</li>)}
+          {weatherData?.forecastTimestamps.map(data => <li>{data.forecastTimeUtc} - <FontAwesomeIcon icon={'"'+ condition(data.conditionCode) + '"'} />{data.conditionCode}</li>)}
         </ul>
       </header>
     </div>
