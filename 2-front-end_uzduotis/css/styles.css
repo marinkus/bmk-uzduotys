@@ -2,24 +2,35 @@ body * {
     margin: 0;
     padding: 0;
 }
+
 .container {
     display: flex;
-    width: 100%;
 }
-.container > .navi {
+
+.content {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.content>.navi {
     background-color: rgba(247, 103, 7, 0.897);
     display: flex;
     width: 100%;
     box-sizing: border-box;
     z-index: 1;
+    position: fixed;
+    top: 0;
 }
-.container > .navi > .nav-items {
+
+.content>.navi>.nav-items {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
 }
-.container > .navi > .nav-items > .button {
+
+.content>.navi>.nav-items>.button {
     margin-left: 4px;
     border-radius: 8px;
     background-color: rgba(168, 80, 22, 0.973);
@@ -27,34 +38,47 @@ body * {
     transition: 0.6s;
     color: grey;
 }
-.container > .navi > .nav-items > .button:first-child {
+
+.content>.navi>.nav-items>.button:first-child {
     margin-left: 0px;
 }
 
-.container > .navi > .nav-items > .button:hover {
+.content>.navi>.nav-items>.button:hover {
     background-color: rgba(199, 86, 11, 0.301);
 }
-.container > .navi > .nav-items > .button > .nav-link {
+
+.content>.navi>.nav-items>.button>.nav-link {
     text-decoration: none;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     color: grey;
 }
 
+p {
+    font-size: 60px;
+}
+
 @media(max-width: 480px) {
-    .container > .navi {
+    .content {
+        margin: 0px 30px 0px 0px;
+    }
+    .content>.navi {
         height: 100%;
         width: auto;
         flex-direction: column;
-      }
-      .container > .navi > .nav-items {
+        left: 0;
+    }
+
+    .content>.navi>.nav-items {
         width: 100%;
         display: block;
     }
-    .container > .navi > .nav-items > .button > .nav-link > span {
+
+    .content>.navi>.nav-items>.button>.nav-link>span {
         display: none;
     }
-    .container > .navi > .nav-items > .button {
+
+    .content>.navi>.nav-items>.button {
         margin-top: 4px;
         border-radius: 8px;
         background-color: rgba(168, 80, 22, 0.973);
@@ -62,9 +86,10 @@ body * {
         transition: 0.6s;
         color: grey;
     }
-    .container > .navi > .nav-items > .button:first-child {
+
+    .content>.navi>.nav-items>.button:first-child {
         margin-left: 4px;
         margin-top: 0px;
     }
-    
+
 }
