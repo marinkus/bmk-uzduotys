@@ -22,6 +22,7 @@ body * {
     background-color: aqua;
     padding: 8px;
     transition: 0.6s;
+    color: grey;
 }
 .container > .navi > .nav-items > .button:hover {
     background-color: rgb(163, 212, 28);
@@ -31,4 +32,20 @@ body * {
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     color: grey;
+}
+
+@media(max-width: 480px) {
+    .container > .navi {
+        height: 100%;
+        width: auto;
+        flex-direction: column;
+      }
+      .container > .navi > .nav-items {
+        width: 100%;
+        display: block;
+    }
+    .container > .navi > .nav-items > .button > .nav-link > span {
+        display: none;
+    }
+    
 }
