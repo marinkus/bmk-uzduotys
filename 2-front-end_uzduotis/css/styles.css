@@ -33,7 +33,7 @@ body * {
 .content>.navi>.nav-items>.button {
     margin-left: 4px;
     border-radius: 8px;
-    background-color: rgba(168, 80, 22, 0.973);
+    background-color: rgba(36, 230, 149, 0.856);
     padding: 8px;
     transition: 0.6s;
     color: grey;
@@ -80,11 +80,6 @@ p {
 
     .content>.navi>.nav-items>.button {
         margin: 4px 4px 0px 4px;
-        border-radius: 8px;
-        background-color: rgba(168, 80, 22, 0.973);
-        padding: 8px;
-        transition: 0.6s;
-        color: grey;
         display: flex;
         justify-content: center;
     }
