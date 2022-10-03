@@ -27,6 +27,7 @@ body * {
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
+    margin-right: 10px;
 }
 
 .content>.navi>.nav-items>.button {
@@ -78,7 +79,7 @@ p {
     }
 
     .content>.navi>.nav-items>.button {
-        margin-top: 4px;
+        margin: 4px 4px 0px 0px;
         border-radius: 8px;
         background-color: rgba(168, 80, 22, 0.973);
         padding: 8px;
